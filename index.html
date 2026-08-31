@@ -183,7 +183,16 @@
   }
 
   /* ---------- Input bar ---------- */
-  .input-bar {
+  .input-bar {.input-bar input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-light);
+  font-size: 15px;
+  padding: 10px 0;
+}
     display: flex;
     align-items: center;
     gap: 10px;
@@ -253,7 +262,19 @@
     font-size: 20px;
   }
 
-  .card {
+  .card {.card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border: 1px solid rgba(10,26,61,0.12);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(10,26,61,0.08);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  overflow: hidden;
+}
     padding: 24px 20px;
     max-width: 100%;
   }
